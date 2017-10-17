@@ -5,12 +5,12 @@ import { loginUserEvent, loginUserSuccess } from '../../redux/actions'
 import { connect } from 'react-redux'
 import { branch, renderComponent } from 'recompose'
 
-import { PacmanLoader } from 'react-spinners'
+import Spinner from '../common/Spinner'
 
 const LoadingView = ({}) => (
   <div className="LoadingView">
-    <div className="text-center" style={{ padding: '100px', width: '30px', margin: 'auto' }}>
-      <PacmanLoader color='#28a745' />
+    <div style={{ padding: '100px' }}>
+      <Spinner />
     </div>
   </div>
 );

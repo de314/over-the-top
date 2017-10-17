@@ -9,6 +9,9 @@ import { Switch, Route } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import Home from '../home/Home'
 import Page404 from '../common/Page404'
+import AddPlugin from '../plugins/AddPlugin'
+import OAuthHandler from '../auth/OAuthHandler'
+import PluginsHome from '../plugins/PluginsHome'
 
 import './PrivateContent.css'
 
@@ -21,6 +24,9 @@ let PrivateContent = () => (
       <div className="col-lg-9 col-xl-10 content-container">
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/plugins" component={PluginsHome} />
+          <Route exact path="/plugins/add" component={AddPlugin} />
+          <Route exact path="/oauth/callback" component={OAuthHandler} />
           <Route component={Page404} />
         </Switch>
       </div>

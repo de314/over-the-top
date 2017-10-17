@@ -1,0 +1,11 @@
+.PluginCard {
+  max-width: 200px;
+}
+
+.PluginCard.valid-plugin .card {
+  background-color: #edffed;
+}
+
+.PluginCard.invalid-plugin .card {
+  background-color: #ffeded;
+}

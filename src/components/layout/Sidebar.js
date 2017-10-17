@@ -10,6 +10,8 @@ const Sidebar = () => (
       <NavLink className="nav-link active" to="/">Active</NavLink>
       <NavLink className="nav-link" to="/link">Link</NavLink>
       <NavLink className="nav-link disabled" to="/unknown">Disabled</NavLink>
+      <hr/>
+      <NavLink className="nav-link disabled" to="/plugins">Plugins</NavLink>
     </nav>
   </div>
 );

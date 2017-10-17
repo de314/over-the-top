@@ -18,6 +18,12 @@ export const loginUserFailure = makeActionCreator(LOGIN_USER_FAILURE, 'error')
 export const LOGOUT_USER = 'LOGOUT_USER';
 export const logoutUser = makeActionCreator(LOGOUT_USER)
 
+export const ADD_PLUGIN_AUTH = 'ADD_PLUGIN_AUTH'
+export const addPluginAuth = makeActionCreator(ADD_PLUGIN_AUTH, 'key', 'access_token', 'meta')
+
+export const REVOKE_PLUGIN_AUTH = 'REVOKE_PLUGIN_AUTH'
+export const revokePluginAuth = makeActionCreator(REVOKE_PLUGIN_AUTH, 'key')
+
 /* <<<<<<< DATE >>>>>>>> */
 
 export const SET_DATE = 'SET_DATE';

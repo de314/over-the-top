@@ -15,7 +15,7 @@ export const selectIsAnon = (state) => _.isNil(selectAuthUser(state))
 
 const defaultState = {
   loggingIn: false,
-  user: null,
+  user: {},
   error: null,
 };
 
